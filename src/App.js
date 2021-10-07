@@ -28,7 +28,7 @@ const App = () => {
   console.log(computerChoice)
 
   useEffect(()=>{
-    if (playerChoice === choices[0] && computerChoice === choices[2] || playerChoice === choices[1] && computerChoice === choices[0] || playerChoice === choices[2] && computerChoice === choices[1]) {
+    if ((playerChoice === choices[0] && computerChoice === choices[2]) || (playerChoice === choices[1] && computerChoice === choices[0]) || (playerChoice === choices[2] && computerChoice === choices[1])) {
       setResult('Player wins!')
     } else if (playerChoice === '' && computerChoice === ''){
       setResult('')
@@ -37,7 +37,7 @@ const App = () => {
     } else {
       setResult('Computer wins!')
     }
-  })
+  },[playerChoice, choices, computerChoice])
 
   const reset = () => {
     setPlayerChoice('')
