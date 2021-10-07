@@ -23,7 +23,7 @@ const App = () => {
     } else {
       setComputerChoice(choices[Math.floor(Math.random() * choices.length)])
     }
-  },[playerChoice])
+  },[playerChoice, choices])
 
   console.log(computerChoice)
 
