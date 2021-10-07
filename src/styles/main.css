@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(28, 128, 110);
+  color: white;
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+}
+
+
+.grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+}
+
+.btnGrid{
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  margin: 30px;
+}
+
+button{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+button:hover{
+  transform: scale(1.1);
+  background-color: rgb(0, 0, 0);
+}
+
+.rock{
+background-image: url('../assets/rock.png');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.paper{
+  background-image: url('../assets/paper.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scissors{
+  background-image: url('../assets/scissors.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.resetContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.reset{
+  background-image: url('../assets/background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+}
